@@ -1,24 +1,536 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xtd-Nx-KNa">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ChartVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DGChartVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbF-D6-yjJ" customClass="BarChartView" customModule="DGCharts">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e71-Fl-UlO">
+                                        <rect key="frame" x="163" y="315" width="66" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Show"/>
+                                        <connections>
+                                            <action selector="updateChartData" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnI-dh-uq9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HbF-D6-yjJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DUG-0Y-qFC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HbF-D6-yjJ" secondAttribute="bottom" id="EyC-bO-z29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HbF-D6-yjJ" secondAttribute="trailing" id="GmL-FT-TBI"/>
+                            <constraint firstItem="HbF-D6-yjJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LYk-Rr-VGZ"/>
+                            <constraint firstItem="HbF-D6-yjJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kwI-JD-tX3"/>
+                            <constraint firstItem="HbF-D6-yjJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lR7-Fv-nLY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HbF-D6-yjJ" secondAttribute="bottom" id="vva-mw-6d8"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yps-8i-BSN"/>
+                    <connections>
+                        <outlet property="chartView" destination="HbF-D6-yjJ" id="QZl-fZ-0Eq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1892" y="-250"/>
+        </scene>
+        <!--DGChart-->
+        <scene sceneID="Fzh-81-dji">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g3D-ui-vmy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="DGChart" id="UXs-cR-fgX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zuG-aG-txi">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Le-gd-hZS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIw-Mg-id7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="-250"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="i84-2C-A0G">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xtd-Nx-KNa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z0V-Ow-kNb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="g3D-ui-vmy" kind="relationship" relationship="viewControllers" id="roL-PC-UBv"/>
+                        <segue destination="6FT-wu-0FL" kind="relationship" relationship="viewControllers" id="NYk-fw-XQk"/>
+                        <segue destination="7gm-rQ-lkg" kind="relationship" relationship="viewControllers" id="cjj-SM-ZqL"/>
+                        <segue destination="yNF-v7-7GO" kind="relationship" relationship="viewControllers" id="Vz8-QS-LrU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CT3-nO-oFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="992"/>
+        </scene>
+        <!--High CharVC-->
+        <scene sceneID="cJn-Zf-GGc">
+            <objects>
+                <viewController id="J0E-cB-0Xc" customClass="HighCharVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IPy-kd-CqM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXJ-rJ-f08" customClass="HIChartView">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eO4-R4-S1u">
+                                <rect key="frame" x="163" y="408" width="66" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Show"/>
+                                <connections>
+                                    <action selector="showChart" destination="J0E-cB-0Xc" eventType="touchUpInside" id="3df-Zo-Ng0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f50-TH-cfu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RXJ-rJ-f08" firstAttribute="leading" secondItem="f50-TH-cfu" secondAttribute="leading" id="8eJ-Vt-Nhu"/>
+                            <constraint firstItem="f50-TH-cfu" firstAttribute="bottom" secondItem="RXJ-rJ-f08" secondAttribute="bottom" id="DQ1-cQ-u8R"/>
+                            <constraint firstItem="f50-TH-cfu" firstAttribute="trailing" secondItem="RXJ-rJ-f08" secondAttribute="trailing" id="YCM-UE-QDa"/>
+                            <constraint firstItem="RXJ-rJ-f08" firstAttribute="top" secondItem="f50-TH-cfu" secondAttribute="top" id="yWf-Qp-N0W"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gmx-fh-cPa"/>
+                    <connections>
+                        <outlet property="btnShow" destination="eO4-R4-S1u" id="eEC-3D-Ikx"/>
+                        <outlet property="chartView" destination="RXJ-rJ-f08" id="1FC-eL-RRT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcb-He-hFu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="432"/>
+        </scene>
+        <!--HighChart-->
+        <scene sceneID="tQ6-ya-xgk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6FT-wu-0FL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="HighChart" id="Vex-nG-QQT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mcw-Wm-lBn">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J0E-cB-0Xc" kind="relationship" relationship="rootViewController" id="wvL-Cp-4UL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D0I-J6-p5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="432"/>
+        </scene>
+        <!--ChartVC-->
+        <scene sceneID="qGT-GM-0Yp">
+            <objects>
+                <viewController id="neS-eV-mBH" customClass="AAChartVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3gM-rB-aF9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFq-81-GwQ" customClass="AAChartView" customModule="AAInfographics">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjl-U5-gpi">
+                                <rect key="frame" x="159" y="408" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="showChart" destination="neS-eV-mBH" eventType="touchUpInside" id="TKx-Q9-bZL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RSB-PK-aBi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pFq-81-GwQ" firstAttribute="leading" secondItem="RSB-PK-aBi" secondAttribute="leading" id="BAG-Ge-6aG"/>
+                            <constraint firstItem="pFq-81-GwQ" firstAttribute="top" secondItem="RSB-PK-aBi" secondAttribute="top" id="H9r-i7-P8p"/>
+                            <constraint firstItem="RSB-PK-aBi" firstAttribute="bottom" secondItem="pFq-81-GwQ" secondAttribute="bottom" id="rjY-Q5-BaV"/>
+                            <constraint firstItem="RSB-PK-aBi" firstAttribute="trailing" secondItem="pFq-81-GwQ" secondAttribute="trailing" id="wGT-SX-ycb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zfj-fh-Iii"/>
+                    <connections>
+                        <outlet property="aaChartView" destination="pFq-81-GwQ" id="Yc6-C5-n0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwh-W3-r9r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950" y="1111"/>
+        </scene>
+        <!--AAChart-->
+        <scene sceneID="5CF-tZ-pDh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7gm-rQ-lkg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="AAChart" id="K0l-f9-tWM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bOr-sY-z0Y">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="neS-eV-mBH" kind="relationship" relationship="rootViewController" id="qxv-TE-05A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3I-Bd-qaU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="1111"/>
+        </scene>
+        <!--Other ChartVC-->
+        <scene sceneID="ehd-w5-pON">
+            <objects>
+                <viewController id="pRa-kp-cHr" customClass="OtherChartVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bq5-hB-674">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="BLr-V0-VPr">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cx-oD-NJf">
+                                        <rect key="frame" x="110.33333333333333" y="0.0" width="172.33333333333337" height="42.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="AppPear/ChartView"/>
+                                        <connections>
+                                            <segue destination="ugm-hY-UIH" kind="show" id="ooq-Yd-ncG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2w-cg-n9w">
+                                        <rect key="frame" x="101.33333333333333" y="96.333333333333343" width="190.33333333333337" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="willdale/SwiftUICharts"/>
+                                        <connections>
+                                            <segue destination="8wA-Ix-n2x" kind="show" id="GJJ-Nr-gDx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfM-jM-0Zg">
+                                        <rect key="frame" x="153.33333333333334" y="184.66666666666669" width="86.333333333333343" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ZFChart"/>
+                                        <connections>
+                                            <segue destination="lt5-cT-baq" kind="show" id="u3e-Nl-KO2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nac-yO-KoV">
+                                        <rect key="frame" x="106.33333333333333" y="273" width="180.66666666666669" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="mecid/SwiftUICharts"/>
+                                        <connections>
+                                            <segue destination="IUJ-cI-7mp" kind="show" id="eBE-bZ-bLV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aga-A7-zl2">
+                                        <rect key="frame" x="152.66666666666666" y="361.33333333333331" width="87.666666666666657" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="XYChart"/>
+                                        <connections>
+                                            <segue destination="i0E-ip-Py0" kind="show" id="gf5-Ny-GVL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEa-ZI-ldZ">
+                                        <rect key="frame" x="150.33333333333334" y="449.66666666666663" width="92.666666666666657" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="FLCharts"/>
+                                        <connections>
+                                            <segue destination="jzv-ad-qar" kind="show" id="QNh-NI-tJg"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHO-8q-rAq">
+                                        <rect key="frame" x="76.666666666666686" y="538" width="240" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AG1-Gh-9ws"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BLr-V0-VPr" firstAttribute="top" secondItem="AG1-Gh-9ws" secondAttribute="top" id="Pxr-PU-jqJ"/>
+                            <constraint firstItem="BLr-V0-VPr" firstAttribute="leading" secondItem="AG1-Gh-9ws" secondAttribute="leading" id="ak6-Vc-iKx"/>
+                            <constraint firstItem="AG1-Gh-9ws" firstAttribute="trailing" secondItem="BLr-V0-VPr" secondAttribute="trailing" id="bei-1u-KN6"/>
+                            <constraint firstItem="AG1-Gh-9ws" firstAttribute="bottom" secondItem="BLr-V0-VPr" secondAttribute="bottom" id="qwz-9o-UYo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="58N-3T-mmf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7M-Cj-EOv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843.5114503816794" y="1828.8732394366198"/>
+        </scene>
+        <!--其他-->
+        <scene sceneID="OeT-f6-us7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yNF-v7-7GO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="其他" id="V9q-cV-BkF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xNh-d2-2B1">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pRa-kp-cHr" kind="relationship" relationship="rootViewController" id="4Eq-yW-QEN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SD6-lU-yW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="1829"/>
+        </scene>
+        <!--ChartVC-->
+        <scene sceneID="c5H-mC-8ZL">
+            <objects>
+                <viewController id="lt5-cT-baq" customClass="ZFChartVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i24-e6-xMs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajC-nM-R1v">
+                                <rect key="frame" x="159" y="408" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="showChart" destination="lt5-cT-baq" eventType="touchUpInside" id="D8O-Sk-B8r"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-KD-or8" customClass="ZFBarChart">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cu4-Z5-bnz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cu4-Z5-bnz" firstAttribute="trailing" secondItem="ehF-KD-or8" secondAttribute="trailing" id="Fvh-nL-FhK"/>
+                            <constraint firstItem="ehF-KD-or8" firstAttribute="leading" secondItem="cu4-Z5-bnz" secondAttribute="leading" id="ITH-9f-veu"/>
+                            <constraint firstItem="ehF-KD-or8" firstAttribute="top" secondItem="cu4-Z5-bnz" secondAttribute="top" id="oVu-xR-dEt"/>
+                            <constraint firstItem="cu4-Z5-bnz" firstAttribute="bottom" secondItem="ehF-KD-or8" secondAttribute="bottom" id="t9G-ea-BTG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b6Q-0I-tYc"/>
+                    <connections>
+                        <outlet property="showBtn" destination="ajC-nM-R1v" id="Wv5-RG-Ocp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rv1-3U-0AY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3385" y="1916"/>
+        </scene>
+        <!--Chart ViewVC-->
+        <scene sceneID="gez-y2-tOF">
+            <objects>
+                <viewController id="ugm-hY-UIH" customClass="APChartViewVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dvS-M0-12I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dL-oC-tIc" customClass="AAChartView" customModule="AAInfographics">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="era-aF-ag9">
+                                <rect key="frame" x="159" y="408" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="showChart" destination="ugm-hY-UIH" eventType="touchUpInside" id="tvI-Gk-DaR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="71l-Pd-qxL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="71l-Pd-qxL" firstAttribute="trailing" secondItem="8dL-oC-tIc" secondAttribute="trailing" id="7AN-RI-lTe"/>
+                            <constraint firstItem="8dL-oC-tIc" firstAttribute="top" secondItem="71l-Pd-qxL" secondAttribute="top" id="fV4-Sw-hFy"/>
+                            <constraint firstItem="8dL-oC-tIc" firstAttribute="leading" secondItem="71l-Pd-qxL" secondAttribute="leading" id="m0e-Os-ari"/>
+                            <constraint firstItem="71l-Pd-qxL" firstAttribute="bottom" secondItem="8dL-oC-tIc" secondAttribute="bottom" id="qQ3-4U-wAD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k86-UT-8Xk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hJ-ef-AW4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3387" y="1232"/>
+        </scene>
+        <!--ChartsVC-->
+        <scene sceneID="x09-a9-09h">
+            <objects>
+                <viewController id="jzv-ad-qar" customClass="FLChartsVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KWE-ic-djp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvT-5V-z7N">
+                                <rect key="frame" x="159" y="408" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="showChart" destination="jzv-ad-qar" eventType="touchUpInside" id="fIt-9A-UBF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7ym-NY-mfU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mdT-6x-Okh"/>
+                    <connections>
+                        <outlet property="showBtn" destination="KvT-5V-z7N" id="bcz-r8-PuP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0s-Qe-lRO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="2654"/>
+        </scene>
+        <!--SwiftUI ChartsVC-->
+        <scene sceneID="wOP-g2-M1r">
+            <objects>
+                <viewController id="8wA-Ix-n2x" customClass="WLSwiftUIChartsVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="95P-Uy-ksx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lk2-x4-g2r" customClass="AAChartView" customModule="AAInfographics">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FW-fX-5uB">
+                                <rect key="frame" x="159" y="408" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="showChart" destination="8wA-Ix-n2x" eventType="touchUpInside" id="7F4-Ua-Jti"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aYS-mv-BsS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lk2-x4-g2r" firstAttribute="leading" secondItem="aYS-mv-BsS" secondAttribute="leading" id="RGG-iR-dws"/>
+                            <constraint firstItem="aYS-mv-BsS" firstAttribute="bottom" secondItem="lk2-x4-g2r" secondAttribute="bottom" id="TJv-4h-Y8s"/>
+                            <constraint firstItem="aYS-mv-BsS" firstAttribute="trailing" secondItem="lk2-x4-g2r" secondAttribute="trailing" id="gZT-a7-6Dx"/>
+                            <constraint firstItem="lk2-x4-g2r" firstAttribute="top" secondItem="aYS-mv-BsS" secondAttribute="top" id="qBb-CM-TXT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="veZ-oY-Faf"/>
+                    <connections>
+                        <outlet property="btnShow" destination="5FW-fX-5uB" id="cWm-DW-lOp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZA6-m4-lm0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4292" y="1401"/>
+        </scene>
+        <!--ChartVC-->
+        <scene sceneID="dR0-IE-c6Z">
+            <objects>
+                <viewController id="i0E-ip-Py0" customClass="XYChartVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tcB-w8-equ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1H-6j-Ytn">
+                                <rect key="frame" x="159" y="445" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="showChart" destination="i0E-ip-Py0" eventType="touchUpInside" id="qfN-q2-6KR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hvc-Hy-irh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2lA-A8-lgl"/>
+                    <connections>
+                        <outlet property="showBtn" destination="L1H-6j-Ytn" id="dhc-9q-Uy5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Dy-Ng-t1U" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="2646"/>
+        </scene>
+        <!--SwiftUI ChartsVC-->
+        <scene sceneID="1hu-cZ-8qa">
+            <objects>
+                <viewController id="IUJ-cI-7mp" customClass="MDSwiftUIChartsVC" customModule="ChartApmDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9NA-a1-eew">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oog-y7-NPU" customClass="ZFBarChart">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFR-Iv-dmT">
+                                <rect key="frame" x="159" y="408" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="showChart" destination="IUJ-cI-7mp" eventType="touchUpInside" id="COi-yH-XWu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pcx-AS-fPA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pcx-AS-fPA" firstAttribute="trailing" secondItem="Oog-y7-NPU" secondAttribute="trailing" id="06b-Oq-d9v"/>
+                            <constraint firstItem="Oog-y7-NPU" firstAttribute="leading" secondItem="Pcx-AS-fPA" secondAttribute="leading" id="DQR-Va-W7R"/>
+                            <constraint firstItem="Pcx-AS-fPA" firstAttribute="bottom" secondItem="Oog-y7-NPU" secondAttribute="bottom" id="mYn-D0-nJl"/>
+                            <constraint firstItem="Oog-y7-NPU" firstAttribute="top" secondItem="Pcx-AS-fPA" secondAttribute="top" id="vKc-G9-9k2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="olf-Ni-gTN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pT9-GP-9Tl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4224" y="2159"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

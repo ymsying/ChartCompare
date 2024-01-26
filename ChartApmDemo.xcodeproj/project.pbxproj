@@ -7,15 +7,134 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D05CD2EBA8F997351CE8F411 /* Pods_ChartApmDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C36FE57979F14E0AAB1025 /* Pods_ChartApmDemo.framework */; };
+		E05857C72B6381370006B6AF /* ZFChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05857C62B6381370006B6AF /* ZFChartVC.swift */; };
+		E058581B2B6382AD0006B6AF /* ZFGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857CB2B6382AD0006B6AF /* ZFGenericChart.m */; };
+		E058581C2B6382AD0006B6AF /* ZFBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857CF2B6382AD0006B6AF /* ZFBarChart.m */; };
+		E058581D2B6382AD0006B6AF /* ZFBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857D02B6382AD0006B6AF /* ZFBar.m */; };
+		E058581E2B6382AD0006B6AF /* UIView+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857D22B6382AD0006B6AF /* UIView+Zirkfied.m */; };
+		E058581F2B6382AD0006B6AF /* UIBezierPath+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857D42B6382AD0006B6AF /* UIBezierPath+Zirkfied.m */; };
+		E05858202B6382AD0006B6AF /* UIColor+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857D82B6382AD0006B6AF /* UIColor+Zirkfied.m */; };
+		E05858212B6382AD0006B6AF /* NSString+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857DA2B6382AD0006B6AF /* NSString+Zirkfied.m */; };
+		E05858222B6382AD0006B6AF /* NSNumber+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857DB2B6382AD0006B6AF /* NSNumber+Zirkfied.m */; };
+		E05858232B6382AD0006B6AF /* ZFCirqueChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857DE2B6382AD0006B6AF /* ZFCirqueChart.m */; };
+		E05858242B6382AD0006B6AF /* ZFCirque.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857E02B6382AD0006B6AF /* ZFCirque.m */; };
+		E05858252B6382AD0006B6AF /* ZFHorizontalAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857E22B6382AD0006B6AF /* ZFHorizontalAxis.m */; };
+		E05858262B6382AD0006B6AF /* ZFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857E62B6382AD0006B6AF /* ZFConst.m */; };
+		E05858272B6382AD0006B6AF /* ZFMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857EA2B6382AD0006B6AF /* ZFMethod.m */; };
+		E05858282B6382AD0006B6AF /* ZFPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857EC2B6382AD0006B6AF /* ZFPieChart.m */; };
+		E05858292B6382AD0006B6AF /* ZFPie.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857F02B6382AD0006B6AF /* ZFPie.m */; };
+		E058582A2B6382AD0006B6AF /* ZFTranslucencePath.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857F12B6382AD0006B6AF /* ZFTranslucencePath.m */; };
+		E058582B2B6382AD0006B6AF /* ZFLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857F42B6382AD0006B6AF /* ZFLineChart.m */; };
+		E058582C2B6382AD0006B6AF /* ZFCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857F72B6382AD0006B6AF /* ZFCircle.m */; };
+		E058582D2B6382AD0006B6AF /* ZFLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857F82B6382AD0006B6AF /* ZFLine.m */; };
+		E058582E2B6382AD0006B6AF /* ZFXAxisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857FB2B6382AD0006B6AF /* ZFXAxisLine.m */; };
+		E058582F2B6382AD0006B6AF /* ZFYAxisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857FC2B6382AD0006B6AF /* ZFYAxisLine.m */; };
+		E05858302B6382AD0006B6AF /* ZFPopoverLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E05857FE2B6382AD0006B6AF /* ZFPopoverLabel.m */; };
+		E05858312B6382AD0006B6AF /* ZFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858002B6382AD0006B6AF /* ZFLabel.m */; };
+		E05858322B6382AD0006B6AF /* ZFRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858032B6382AD0006B6AF /* ZFRadar.m */; };
+		E05858332B6382AD0006B6AF /* ZFPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858042B6382AD0006B6AF /* ZFPolygon.m */; };
+		E05858342B6382AD0006B6AF /* ZFRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858052B6382AD0006B6AF /* ZFRadarChart.m */; };
+		E05858352B6382AD0006B6AF /* ZFGenericAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = E058580B2B6382AD0006B6AF /* ZFGenericAxis.m */; };
+		E05858362B6382AD0006B6AF /* ZFGradientAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E058580F2B6382AD0006B6AF /* ZFGradientAttribute.m */; };
+		E05858372B6382AD0006B6AF /* ZFCurveAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858102B6382AD0006B6AF /* ZFCurveAttribute.m */; };
+		E05858382B6382AD0006B6AF /* ZFWaveChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858142B6382AD0006B6AF /* ZFWaveChart.m */; };
+		E05858392B6382AD0006B6AF /* ZFWave.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858152B6382AD0006B6AF /* ZFWave.m */; };
+		E058583A2B6382AD0006B6AF /* ZFHorizontalBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858182B6382AD0006B6AF /* ZFHorizontalBarChart.m */; };
+		E058583B2B6382AD0006B6AF /* ZFHorizontalBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E05858192B6382AD0006B6AF /* ZFHorizontalBar.m */; };
 		E09F5C612B6286890001E04A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C602B6286890001E04A /* AppDelegate.swift */; };
 		E09F5C632B6286890001E04A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C622B6286890001E04A /* SceneDelegate.swift */; };
 		E09F5C652B6286890001E04A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C642B6286890001E04A /* ViewController.swift */; };
 		E09F5C682B6286890001E04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E09F5C662B6286890001E04A /* Main.storyboard */; };
 		E09F5C6A2B62868B0001E04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09F5C692B62868B0001E04A /* Assets.xcassets */; };
 		E09F5C6D2B62868B0001E04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E09F5C6B2B62868B0001E04A /* LaunchScreen.storyboard */; };
+		E09F5C752B6288E80001E04A /* DGChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C742B6288E80001E04A /* DGChartVC.swift */; };
+		E09F5C7B2B628D820001E04A /* HighCharVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C7A2B628D820001E04A /* HighCharVC.swift */; };
+		E09F5C7F2B6353380001E04A /* AAChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C7E2B6353380001E04A /* AAChartVC.swift */; };
+		E09F5C812B63581F0001E04A /* Consist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C802B63581F0001E04A /* Consist.swift */; };
+		E09F5C832B6359340001E04A /* OtherChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C822B6359340001E04A /* OtherChartVC.swift */; };
+		E09F5C852B6359600001E04A /* APChartViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C842B6359600001E04A /* APChartViewVC.swift */; };
+		E09F5C8D2B637CC60001E04A /* WLSwiftUIChartsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F5C8C2B637CC60001E04A /* WLSwiftUIChartsVC.swift */; };
+		E0A34BF32B638ABB005685E2 /* MDSwiftUIChartsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A34BF22B638ABB005685E2 /* MDSwiftUIChartsVC.swift */; };
+		E0A34BF82B638DA9005685E2 /* XYChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A34BF72B638DA9005685E2 /* XYChartVC.swift */; };
+		E0A34C002B638FFD005685E2 /* RandomChartDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A34BFE2B638FFD005685E2 /* RandomChartDataSource.m */; };
+		E0A34C022B6398E6005685E2 /* FLChartsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A34C012B6398E6005685E2 /* FLChartsVC.swift */; };
+		E0A34C082B63AD61005685E2 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E0A34C072B63AD61005685E2 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17525AA05F51A5CFE411AF1A /* Pods-ChartApmDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartApmDemo.debug.xcconfig"; path = "Target Support Files/Pods-ChartApmDemo/Pods-ChartApmDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		689B52EBAB3F01252D41E1F8 /* Pods-ChartApmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartApmDemo.release.xcconfig"; path = "Target Support Files/Pods-ChartApmDemo/Pods-ChartApmDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D7C36FE57979F14E0AAB1025 /* Pods_ChartApmDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartApmDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E05857C62B6381370006B6AF /* ZFChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFChartVC.swift; sourceTree = "<group>"; };
+		E05857CA2B6382AD0006B6AF /* ZFGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGenericChart.h; sourceTree = "<group>"; };
+		E05857CB2B6382AD0006B6AF /* ZFGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGenericChart.m; sourceTree = "<group>"; };
+		E05857CD2B6382AD0006B6AF /* ZFBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBarChart.h; sourceTree = "<group>"; };
+		E05857CE2B6382AD0006B6AF /* ZFBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBar.h; sourceTree = "<group>"; };
+		E05857CF2B6382AD0006B6AF /* ZFBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBarChart.m; sourceTree = "<group>"; };
+		E05857D02B6382AD0006B6AF /* ZFBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBar.m; sourceTree = "<group>"; };
+		E05857D22B6382AD0006B6AF /* UIView+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Zirkfied.m"; sourceTree = "<group>"; };
+		E05857D32B6382AD0006B6AF /* UIColor+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Zirkfied.h"; sourceTree = "<group>"; };
+		E05857D42B6382AD0006B6AF /* UIBezierPath+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Zirkfied.m"; sourceTree = "<group>"; };
+		E05857D52B6382AD0006B6AF /* NSString+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Zirkfied.h"; sourceTree = "<group>"; };
+		E05857D62B6382AD0006B6AF /* NSNumber+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Zirkfied.h"; sourceTree = "<group>"; };
+		E05857D72B6382AD0006B6AF /* UIView+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Zirkfied.h"; sourceTree = "<group>"; };
+		E05857D82B6382AD0006B6AF /* UIColor+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Zirkfied.m"; sourceTree = "<group>"; };
+		E05857D92B6382AD0006B6AF /* UIBezierPath+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Zirkfied.h"; sourceTree = "<group>"; };
+		E05857DA2B6382AD0006B6AF /* NSString+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Zirkfied.m"; sourceTree = "<group>"; };
+		E05857DB2B6382AD0006B6AF /* NSNumber+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Zirkfied.m"; sourceTree = "<group>"; };
+		E05857DD2B6382AD0006B6AF /* ZFCirque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCirque.h; sourceTree = "<group>"; };
+		E05857DE2B6382AD0006B6AF /* ZFCirqueChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCirqueChart.m; sourceTree = "<group>"; };
+		E05857DF2B6382AD0006B6AF /* ZFCirqueChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCirqueChart.h; sourceTree = "<group>"; };
+		E05857E02B6382AD0006B6AF /* ZFCirque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCirque.m; sourceTree = "<group>"; };
+		E05857E22B6382AD0006B6AF /* ZFHorizontalAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalAxis.m; sourceTree = "<group>"; };
+		E05857E32B6382AD0006B6AF /* ZFHorizontalAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalAxis.h; sourceTree = "<group>"; };
+		E05857E52B6382AD0006B6AF /* ZFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFColor.h; sourceTree = "<group>"; };
+		E05857E62B6382AD0006B6AF /* ZFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFConst.m; sourceTree = "<group>"; };
+		E05857E72B6382AD0006B6AF /* ZFChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFChart.h; sourceTree = "<group>"; };
+		E05857E82B6382AD0006B6AF /* ZFMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMethod.h; sourceTree = "<group>"; };
+		E05857E92B6382AD0006B6AF /* ZFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFConst.h; sourceTree = "<group>"; };
+		E05857EA2B6382AD0006B6AF /* ZFMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMethod.m; sourceTree = "<group>"; };
+		E05857EC2B6382AD0006B6AF /* ZFPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPieChart.m; sourceTree = "<group>"; };
+		E05857ED2B6382AD0006B6AF /* ZFPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPie.h; sourceTree = "<group>"; };
+		E05857EE2B6382AD0006B6AF /* ZFTranslucencePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTranslucencePath.h; sourceTree = "<group>"; };
+		E05857EF2B6382AD0006B6AF /* ZFPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPieChart.h; sourceTree = "<group>"; };
+		E05857F02B6382AD0006B6AF /* ZFPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPie.m; sourceTree = "<group>"; };
+		E05857F12B6382AD0006B6AF /* ZFTranslucencePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTranslucencePath.m; sourceTree = "<group>"; };
+		E05857F32B6382AD0006B6AF /* ZFCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCircle.h; sourceTree = "<group>"; };
+		E05857F42B6382AD0006B6AF /* ZFLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLineChart.m; sourceTree = "<group>"; };
+		E05857F52B6382AD0006B6AF /* ZFLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLine.h; sourceTree = "<group>"; };
+		E05857F62B6382AD0006B6AF /* ZFLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLineChart.h; sourceTree = "<group>"; };
+		E05857F72B6382AD0006B6AF /* ZFCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCircle.m; sourceTree = "<group>"; };
+		E05857F82B6382AD0006B6AF /* ZFLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLine.m; sourceTree = "<group>"; };
+		E05857FA2B6382AD0006B6AF /* ZFPopoverLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPopoverLabel.h; sourceTree = "<group>"; };
+		E05857FB2B6382AD0006B6AF /* ZFXAxisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFXAxisLine.m; sourceTree = "<group>"; };
+		E05857FC2B6382AD0006B6AF /* ZFYAxisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFYAxisLine.m; sourceTree = "<group>"; };
+		E05857FD2B6382AD0006B6AF /* ZFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLabel.h; sourceTree = "<group>"; };
+		E05857FE2B6382AD0006B6AF /* ZFPopoverLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPopoverLabel.m; sourceTree = "<group>"; };
+		E05857FF2B6382AD0006B6AF /* ZFXAxisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFXAxisLine.h; sourceTree = "<group>"; };
+		E05858002B6382AD0006B6AF /* ZFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLabel.m; sourceTree = "<group>"; };
+		E05858012B6382AD0006B6AF /* ZFYAxisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFYAxisLine.h; sourceTree = "<group>"; };
+		E05858032B6382AD0006B6AF /* ZFRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRadar.m; sourceTree = "<group>"; };
+		E05858042B6382AD0006B6AF /* ZFPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPolygon.m; sourceTree = "<group>"; };
+		E05858052B6382AD0006B6AF /* ZFRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRadarChart.m; sourceTree = "<group>"; };
+		E05858062B6382AD0006B6AF /* ZFRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRadar.h; sourceTree = "<group>"; };
+		E05858072B6382AD0006B6AF /* ZFPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPolygon.h; sourceTree = "<group>"; };
+		E05858082B6382AD0006B6AF /* ZFRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRadarChart.h; sourceTree = "<group>"; };
+		E058580A2B6382AD0006B6AF /* ZFGenericAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGenericAxis.h; sourceTree = "<group>"; };
+		E058580B2B6382AD0006B6AF /* ZFGenericAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGenericAxis.m; sourceTree = "<group>"; };
+		E058580D2B6382AD0006B6AF /* ZFGradientAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGradientAttribute.h; sourceTree = "<group>"; };
+		E058580E2B6382AD0006B6AF /* ZFCurveAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCurveAttribute.h; sourceTree = "<group>"; };
+		E058580F2B6382AD0006B6AF /* ZFGradientAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGradientAttribute.m; sourceTree = "<group>"; };
+		E05858102B6382AD0006B6AF /* ZFCurveAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCurveAttribute.m; sourceTree = "<group>"; };
+		E05858122B6382AD0006B6AF /* ZFWaveChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFWaveChart.h; sourceTree = "<group>"; };
+		E05858132B6382AD0006B6AF /* ZFWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFWave.h; sourceTree = "<group>"; };
+		E05858142B6382AD0006B6AF /* ZFWaveChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFWaveChart.m; sourceTree = "<group>"; };
+		E05858152B6382AD0006B6AF /* ZFWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFWave.m; sourceTree = "<group>"; };
+		E05858172B6382AD0006B6AF /* ZFHorizontalBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalBar.h; sourceTree = "<group>"; };
+		E05858182B6382AD0006B6AF /* ZFHorizontalBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalBarChart.m; sourceTree = "<group>"; };
+		E05858192B6382AD0006B6AF /* ZFHorizontalBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalBar.m; sourceTree = "<group>"; };
+		E058581A2B6382AD0006B6AF /* ZFHorizontalBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalBarChart.h; sourceTree = "<group>"; };
 		E09F5C5D2B6286890001E04A /* ChartApmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartApmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09F5C602B6286890001E04A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E09F5C622B6286890001E04A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +143,19 @@
 		E09F5C692B62868B0001E04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E09F5C6C2B62868B0001E04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E09F5C6E2B62868B0001E04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E09F5C742B6288E80001E04A /* DGChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGChartVC.swift; sourceTree = "<group>"; };
+		E09F5C762B628BFC0001E04A /* ChartApmDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChartApmDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E09F5C7A2B628D820001E04A /* HighCharVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighCharVC.swift; sourceTree = "<group>"; };
+		E09F5C7E2B6353380001E04A /* AAChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAChartVC.swift; sourceTree = "<group>"; };
+		E09F5C802B63581F0001E04A /* Consist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consist.swift; sourceTree = "<group>"; };
+		E09F5C822B6359340001E04A /* OtherChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherChartVC.swift; sourceTree = "<group>"; };
+		E09F5C842B6359600001E04A /* APChartViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APChartViewVC.swift; sourceTree = "<group>"; };
+		E09F5C8C2B637CC60001E04A /* WLSwiftUIChartsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSwiftUIChartsVC.swift; sourceTree = "<group>"; };
+		E0A34BF22B638ABB005685E2 /* MDSwiftUIChartsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDSwiftUIChartsVC.swift; sourceTree = "<group>"; };
+		E0A34BF72B638DA9005685E2 /* XYChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYChartVC.swift; sourceTree = "<group>"; };
+		E0A34BFE2B638FFD005685E2 /* RandomChartDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomChartDataSource.m; sourceTree = "<group>"; };
+		E0A34BFF2B638FFD005685E2 /* RandomChartDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomChartDataSource.h; sourceTree = "<group>"; };
+		E0A34C012B6398E6005685E2 /* FLChartsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLChartsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +163,225 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05CD2EBA8F997351CE8F411 /* Pods_ChartApmDemo.framework in Frameworks */,
+				E0A34C082B63AD61005685E2 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		657E9B58DA616B51A8D8DC8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17525AA05F51A5CFE411AF1A /* Pods-ChartApmDemo.debug.xcconfig */,
+				689B52EBAB3F01252D41E1F8 /* Pods-ChartApmDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C60E8F3CCA0198E4CA401C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7C36FE57979F14E0AAB1025 /* Pods_ChartApmDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E05857C82B6382AD0006B6AF /* ZFChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05857C92B6382AD0006B6AF /* ZFGenericChart */,
+				E05857CC2B6382AD0006B6AF /* ZFBarChart */,
+				E05857D12B6382AD0006B6AF /* Category */,
+				E05857DC2B6382AD0006B6AF /* ZFCirqueChart */,
+				E05857E12B6382AD0006B6AF /* ZFHorizontalAxis */,
+				E05857E42B6382AD0006B6AF /* Other */,
+				E05857EB2B6382AD0006B6AF /* ZFPieChart */,
+				E05857F22B6382AD0006B6AF /* ZFLineChart */,
+				E05857F92B6382AD0006B6AF /* Component */,
+				E05858022B6382AD0006B6AF /* ZFRadarChart */,
+				E05858092B6382AD0006B6AF /* ZFGenericAxis */,
+				E058580C2B6382AD0006B6AF /* Model */,
+				E05858112B6382AD0006B6AF /* ZFWaveChart */,
+				E05858162B6382AD0006B6AF /* ZFHorizontalBarChart */,
+			);
+			path = ZFChart;
+			sourceTree = "<group>";
+		};
+		E05857C92B6382AD0006B6AF /* ZFGenericChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05857CA2B6382AD0006B6AF /* ZFGenericChart.h */,
+				E05857CB2B6382AD0006B6AF /* ZFGenericChart.m */,
+			);
+			path = ZFGenericChart;
+			sourceTree = "<group>";
+		};
+		E05857CC2B6382AD0006B6AF /* ZFBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05857CD2B6382AD0006B6AF /* ZFBarChart.h */,
+				E05857CE2B6382AD0006B6AF /* ZFBar.h */,
+				E05857CF2B6382AD0006B6AF /* ZFBarChart.m */,
+				E05857D02B6382AD0006B6AF /* ZFBar.m */,
+			);
+			path = ZFBarChart;
+			sourceTree = "<group>";
+		};
+		E05857D12B6382AD0006B6AF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E05857D22B6382AD0006B6AF /* UIView+Zirkfied.m */,
+				E05857D32B6382AD0006B6AF /* UIColor+Zirkfied.h */,
+				E05857D42B6382AD0006B6AF /* UIBezierPath+Zirkfied.m */,
+				E05857D52B6382AD0006B6AF /* NSString+Zirkfied.h */,
+				E05857D62B6382AD0006B6AF /* NSNumber+Zirkfied.h */,
+				E05857D72B6382AD0006B6AF /* UIView+Zirkfied.h */,
+				E05857D82B6382AD0006B6AF /* UIColor+Zirkfied.m */,
+				E05857D92B6382AD0006B6AF /* UIBezierPath+Zirkfied.h */,
+				E05857DA2B6382AD0006B6AF /* NSString+Zirkfied.m */,
+				E05857DB2B6382AD0006B6AF /* NSNumber+Zirkfied.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E05857DC2B6382AD0006B6AF /* ZFCirqueChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05857DD2B6382AD0006B6AF /* ZFCirque.h */,
+				E05857DE2B6382AD0006B6AF /* ZFCirqueChart.m */,
+				E05857DF2B6382AD0006B6AF /* ZFCirqueChart.h */,
+				E05857E02B6382AD0006B6AF /* ZFCirque.m */,
+			);
+			path = ZFCirqueChart;
+			sourceTree = "<group>";
+		};
+		E05857E12B6382AD0006B6AF /* ZFHorizontalAxis */ = {
+			isa = PBXGroup;
+			children = (
+				E05857E22B6382AD0006B6AF /* ZFHorizontalAxis.m */,
+				E05857E32B6382AD0006B6AF /* ZFHorizontalAxis.h */,
+			);
+			path = ZFHorizontalAxis;
+			sourceTree = "<group>";
+		};
+		E05857E42B6382AD0006B6AF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E05857E52B6382AD0006B6AF /* ZFColor.h */,
+				E05857E62B6382AD0006B6AF /* ZFConst.m */,
+				E05857E72B6382AD0006B6AF /* ZFChart.h */,
+				E05857E82B6382AD0006B6AF /* ZFMethod.h */,
+				E05857E92B6382AD0006B6AF /* ZFConst.h */,
+				E05857EA2B6382AD0006B6AF /* ZFMethod.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E05857EB2B6382AD0006B6AF /* ZFPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05857EC2B6382AD0006B6AF /* ZFPieChart.m */,
+				E05857ED2B6382AD0006B6AF /* ZFPie.h */,
+				E05857EE2B6382AD0006B6AF /* ZFTranslucencePath.h */,
+				E05857EF2B6382AD0006B6AF /* ZFPieChart.h */,
+				E05857F02B6382AD0006B6AF /* ZFPie.m */,
+				E05857F12B6382AD0006B6AF /* ZFTranslucencePath.m */,
+			);
+			path = ZFPieChart;
+			sourceTree = "<group>";
+		};
+		E05857F22B6382AD0006B6AF /* ZFLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05857F32B6382AD0006B6AF /* ZFCircle.h */,
+				E05857F42B6382AD0006B6AF /* ZFLineChart.m */,
+				E05857F52B6382AD0006B6AF /* ZFLine.h */,
+				E05857F62B6382AD0006B6AF /* ZFLineChart.h */,
+				E05857F72B6382AD0006B6AF /* ZFCircle.m */,
+				E05857F82B6382AD0006B6AF /* ZFLine.m */,
+			);
+			path = ZFLineChart;
+			sourceTree = "<group>";
+		};
+		E05857F92B6382AD0006B6AF /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E05857FA2B6382AD0006B6AF /* ZFPopoverLabel.h */,
+				E05857FB2B6382AD0006B6AF /* ZFXAxisLine.m */,
+				E05857FC2B6382AD0006B6AF /* ZFYAxisLine.m */,
+				E05857FD2B6382AD0006B6AF /* ZFLabel.h */,
+				E05857FE2B6382AD0006B6AF /* ZFPopoverLabel.m */,
+				E05857FF2B6382AD0006B6AF /* ZFXAxisLine.h */,
+				E05858002B6382AD0006B6AF /* ZFLabel.m */,
+				E05858012B6382AD0006B6AF /* ZFYAxisLine.h */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		E05858022B6382AD0006B6AF /* ZFRadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05858032B6382AD0006B6AF /* ZFRadar.m */,
+				E05858042B6382AD0006B6AF /* ZFPolygon.m */,
+				E05858052B6382AD0006B6AF /* ZFRadarChart.m */,
+				E05858062B6382AD0006B6AF /* ZFRadar.h */,
+				E05858072B6382AD0006B6AF /* ZFPolygon.h */,
+				E05858082B6382AD0006B6AF /* ZFRadarChart.h */,
+			);
+			path = ZFRadarChart;
+			sourceTree = "<group>";
+		};
+		E05858092B6382AD0006B6AF /* ZFGenericAxis */ = {
+			isa = PBXGroup;
+			children = (
+				E058580A2B6382AD0006B6AF /* ZFGenericAxis.h */,
+				E058580B2B6382AD0006B6AF /* ZFGenericAxis.m */,
+			);
+			path = ZFGenericAxis;
+			sourceTree = "<group>";
+		};
+		E058580C2B6382AD0006B6AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E058580D2B6382AD0006B6AF /* ZFGradientAttribute.h */,
+				E058580E2B6382AD0006B6AF /* ZFCurveAttribute.h */,
+				E058580F2B6382AD0006B6AF /* ZFGradientAttribute.m */,
+				E05858102B6382AD0006B6AF /* ZFCurveAttribute.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E05858112B6382AD0006B6AF /* ZFWaveChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05858122B6382AD0006B6AF /* ZFWaveChart.h */,
+				E05858132B6382AD0006B6AF /* ZFWave.h */,
+				E05858142B6382AD0006B6AF /* ZFWaveChart.m */,
+				E05858152B6382AD0006B6AF /* ZFWave.m */,
+			);
+			path = ZFWaveChart;
+			sourceTree = "<group>";
+		};
+		E05858162B6382AD0006B6AF /* ZFHorizontalBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				E05858172B6382AD0006B6AF /* ZFHorizontalBar.h */,
+				E05858182B6382AD0006B6AF /* ZFHorizontalBarChart.m */,
+				E05858192B6382AD0006B6AF /* ZFHorizontalBar.m */,
+				E058581A2B6382AD0006B6AF /* ZFHorizontalBarChart.h */,
+			);
+			path = ZFHorizontalBarChart;
+			sourceTree = "<group>";
+		};
 		E09F5C542B6286890001E04A = {
 			isa = PBXGroup;
 			children = (
 				E09F5C5F2B6286890001E04A /* ChartApmDemo */,
 				E09F5C5E2B6286890001E04A /* Products */,
+				657E9B58DA616B51A8D8DC8B /* Pods */,
+				C60E8F3CCA0198E4CA401C60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +400,34 @@
 				E09F5C622B6286890001E04A /* SceneDelegate.swift */,
 				E09F5C642B6286890001E04A /* ViewController.swift */,
 				E09F5C662B6286890001E04A /* Main.storyboard */,
+				E09F5C802B63581F0001E04A /* Consist.swift */,
+				E09F5C742B6288E80001E04A /* DGChartVC.swift */,
+				E09F5C7A2B628D820001E04A /* HighCharVC.swift */,
+				E09F5C7E2B6353380001E04A /* AAChartVC.swift */,
+				E09F5C822B6359340001E04A /* OtherChartVC.swift */,
+				E09F5C842B6359600001E04A /* APChartViewVC.swift */,
+				E09F5C8C2B637CC60001E04A /* WLSwiftUIChartsVC.swift */,
+				E05857C62B6381370006B6AF /* ZFChartVC.swift */,
+				E0A34BF22B638ABB005685E2 /* MDSwiftUIChartsVC.swift */,
+				E0A34BF72B638DA9005685E2 /* XYChartVC.swift */,
+				E0A34C012B6398E6005685E2 /* FLChartsVC.swift */,
+				E0A34BFD2B638FFD005685E2 /* XYChartModel */,
+				E05857C82B6382AD0006B6AF /* ZFChart */,
 				E09F5C692B62868B0001E04A /* Assets.xcassets */,
 				E09F5C6B2B62868B0001E04A /* LaunchScreen.storyboard */,
 				E09F5C6E2B62868B0001E04A /* Info.plist */,
+				E09F5C762B628BFC0001E04A /* ChartApmDemo-Bridging-Header.h */,
 			);
 			path = ChartApmDemo;
+			sourceTree = "<group>";
+		};
+		E0A34BFD2B638FFD005685E2 /* XYChartModel */ = {
+			isa = PBXGroup;
+			children = (
+				E0A34BFE2B638FFD005685E2 /* RandomChartDataSource.m */,
+				E0A34BFF2B638FFD005685E2 /* RandomChartDataSource.h */,
+			);
+			path = XYChartModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +437,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E09F5C712B62868B0001E04A /* Build configuration list for PBXNativeTarget "ChartApmDemo" */;
 			buildPhases = (
+				4B8EB91B5F17B5A151F002EF /* [CP] Check Pods Manifest.lock */,
 				E09F5C592B6286890001E04A /* Sources */,
 				E09F5C5A2B6286890001E04A /* Frameworks */,
 				E09F5C5B2B6286890001E04A /* Resources */,
+				E00D00AE47080B20295DDF02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ChartApmDemo;
+			packageProductDependencies = (
+				E0A34C072B63AD61005685E2 /* SwiftUICharts */,
+			);
 			productName = ChartApmDemo;
 			productReference = E09F5C5D2B6286890001E04A /* ChartApmDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +467,7 @@
 				TargetAttributes = {
 					E09F5C5C2B6286890001E04A = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -111,6 +480,9 @@
 				Base,
 			);
 			mainGroup = E09F5C542B6286890001E04A;
+			packageReferences = (
+				E0A34C062B63AD61005685E2 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
 			productRefGroup = E09F5C5E2B6286890001E04A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,14 +505,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B8EB91B5F17B5A151F002EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartApmDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E00D00AE47080B20295DDF02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartApmDemo/Pods-ChartApmDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartApmDemo/Pods-ChartApmDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartApmDemo/Pods-ChartApmDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E09F5C592B6286890001E04A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A34C002B638FFD005685E2 /* RandomChartDataSource.m in Sources */,
+				E09F5C752B6288E80001E04A /* DGChartVC.swift in Sources */,
+				E058581F2B6382AD0006B6AF /* UIBezierPath+Zirkfied.m in Sources */,
+				E058581C2B6382AD0006B6AF /* ZFBarChart.m in Sources */,
+				E058583B2B6382AD0006B6AF /* ZFHorizontalBar.m in Sources */,
+				E05857C72B6381370006B6AF /* ZFChartVC.swift in Sources */,
+				E0A34BF32B638ABB005685E2 /* MDSwiftUIChartsVC.swift in Sources */,
+				E05858392B6382AD0006B6AF /* ZFWave.m in Sources */,
+				E05858362B6382AD0006B6AF /* ZFGradientAttribute.m in Sources */,
+				E058583A2B6382AD0006B6AF /* ZFHorizontalBarChart.m in Sources */,
+				E05858352B6382AD0006B6AF /* ZFGenericAxis.m in Sources */,
+				E0A34C022B6398E6005685E2 /* FLChartsVC.swift in Sources */,
+				E058582E2B6382AD0006B6AF /* ZFXAxisLine.m in Sources */,
+				E05858252B6382AD0006B6AF /* ZFHorizontalAxis.m in Sources */,
+				E05858312B6382AD0006B6AF /* ZFLabel.m in Sources */,
+				E058581B2B6382AD0006B6AF /* ZFGenericChart.m in Sources */,
+				E058582B2B6382AD0006B6AF /* ZFLineChart.m in Sources */,
+				E05858232B6382AD0006B6AF /* ZFCirqueChart.m in Sources */,
+				E058582A2B6382AD0006B6AF /* ZFTranslucencePath.m in Sources */,
+				E09F5C852B6359600001E04A /* APChartViewVC.swift in Sources */,
+				E05858322B6382AD0006B6AF /* ZFRadar.m in Sources */,
+				E058582C2B6382AD0006B6AF /* ZFCircle.m in Sources */,
+				E05858332B6382AD0006B6AF /* ZFPolygon.m in Sources */,
+				E05858262B6382AD0006B6AF /* ZFConst.m in Sources */,
+				E05858382B6382AD0006B6AF /* ZFWaveChart.m in Sources */,
+				E05858222B6382AD0006B6AF /* NSNumber+Zirkfied.m in Sources */,
+				E058581E2B6382AD0006B6AF /* UIView+Zirkfied.m in Sources */,
+				E05858302B6382AD0006B6AF /* ZFPopoverLabel.m in Sources */,
+				E09F5C7F2B6353380001E04A /* AAChartVC.swift in Sources */,
+				E05858372B6382AD0006B6AF /* ZFCurveAttribute.m in Sources */,
+				E09F5C832B6359340001E04A /* OtherChartVC.swift in Sources */,
 				E09F5C652B6286890001E04A /* ViewController.swift in Sources */,
+				E0A34BF82B638DA9005685E2 /* XYChartVC.swift in Sources */,
+				E05858282B6382AD0006B6AF /* ZFPieChart.m in Sources */,
+				E05858272B6382AD0006B6AF /* ZFMethod.m in Sources */,
+				E05858342B6382AD0006B6AF /* ZFRadarChart.m in Sources */,
+				E05858292B6382AD0006B6AF /* ZFPie.m in Sources */,
+				E09F5C812B63581F0001E04A /* Consist.swift in Sources */,
+				E058581D2B6382AD0006B6AF /* ZFBar.m in Sources */,
+				E05858242B6382AD0006B6AF /* ZFCirque.m in Sources */,
+				E05858202B6382AD0006B6AF /* UIColor+Zirkfied.m in Sources */,
+				E05858212B6382AD0006B6AF /* NSString+Zirkfied.m in Sources */,
 				E09F5C612B6286890001E04A /* AppDelegate.swift in Sources */,
+				E09F5C8D2B637CC60001E04A /* WLSwiftUIChartsVC.swift in Sources */,
+				E09F5C7B2B628D820001E04A /* HighCharVC.swift in Sources */,
 				E09F5C632B6286890001E04A /* SceneDelegate.swift in Sources */,
+				E058582F2B6382AD0006B6AF /* ZFYAxisLine.m in Sources */,
+				E058582D2B6382AD0006B6AF /* ZFLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +746,15 @@
 		};
 		E09F5C722B62868B0001E04A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17525AA05F51A5CFE411AF1A /* Pods-ChartApmDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7TZ5M9A369;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChartApmDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,6 +762,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +771,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Druid.Technology.Debut.ChartApmDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChartApmDemo/ChartApmDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,12 +780,15 @@
 		};
 		E09F5C732B62868B0001E04A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 689B52EBAB3F01252D41E1F8 /* Pods-ChartApmDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7TZ5M9A369;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChartApmDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +796,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +805,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Druid.Technology.Debut.ChartApmDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChartApmDemo/ChartApmDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +833,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0A34C062B63AD61005685E2 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0A34C072B63AD61005685E2 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0A34C062B63AD61005685E2 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E09F5C552B6286890001E04A /* Project object */;
 }

@@ -1,0 +1,80 @@
+PODS:
+  - AAInfographics (7.3.0)
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
+  - DoraemonKit/Core (3.1.3):
+    - FMDB
+    - GCDWebServer
+    - GCDWebServer/WebDAV
+    - GCDWebServer/WebUploader
+  - DoraemonKit/Foundation (3.1.3):
+    - Mantle (~> 2.2)
+    - SocketRocket (~> 0.6)
+  - DoraemonKit/WithMultiControl (3.1.3):
+    - DoraemonKit/Core
+    - DoraemonKit/Foundation
+  - FLCharts (1.9.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - GCDWebServer/WebDAV (3.5.4):
+    - GCDWebServer/Core
+  - GCDWebServer/WebUploader (3.5.4):
+    - GCDWebServer/Core
+  - Highcharts (11.2.0)
+  - Mantle (2.2.0):
+    - Mantle/extobjc (= 2.2.0)
+  - Mantle/extobjc (2.2.0)
+  - SocketRocket (0.7.0)
+  - XYChart (0.0.1)
+
+DEPENDENCIES:
+  - AAInfographics (from `https://github.com/AAChartModel/AAChartKit-Swift.git`)
+  - DGCharts
+  - DoraemonKit/Core
+  - DoraemonKit/Foundation
+  - DoraemonKit/WithMultiControl
+  - FLCharts
+  - Highcharts
+  - XYChart
+
+SPEC REPOS:
+  trunk:
+    - DGCharts
+    - DoraemonKit
+    - FLCharts
+    - FMDB
+    - GCDWebServer
+    - Highcharts
+    - Mantle
+    - SocketRocket
+    - XYChart
+
+EXTERNAL SOURCES:
+  AAInfographics:
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
+
+CHECKOUT OPTIONS:
+  AAInfographics:
+    :commit: f330bbbdacef01341c46ee8bc3f25c83264613af
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
+
+SPEC CHECKSUMS:
+  AAInfographics: ee2a7959acdd0a00243b7f5a3f03a1fa2bdf0781
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
+  DoraemonKit: 7448814a80d9ca56bc8db9105c464b7ec2e62623
+  FLCharts: 32914f511a56b6698e030efe0315a320dbb6428e
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  Highcharts: beba02e3d6b74508a316787e590e6f933c4d6456
+  Mantle: c5aa8794a29a022dfbbfc9799af95f477a69b62d
+  SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+  XYChart: 3c23744432e7ebb11a0c61b5cfba4eb35f12c417
+
+PODFILE CHECKSUM: 86d1f419846af40178a6fe681025d645b5d1cef5
+
+COCOAPODS: 1.11.3
